@@ -47,6 +47,10 @@ public class PlayerController : MonoBehaviour
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
             }
+            else if(Input.GetButtonDown("BuildPlayer1"))
+            {
+                radialMenuScript.Build();
+            }
             else if (!Input.GetButton("LookBackPlayer1") && (movement.x != 0f || movement.y != 0f))
             {
                 JoystickAim = new Vector2(transform.position.x + movement.x, transform.position.y + movement.y);
@@ -76,6 +80,10 @@ public class PlayerController : MonoBehaviour
                 mainRadialScript.ExecutOnClick();
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
+            }
+            else if (Input.GetButtonDown("BuildPlayer2"))
+            {
+                radialMenuScript.Build();
             }
             else if (!Input.GetButton("LookBackPlayer2") && (movement.x != 0f || movement.y != 0f))
             {

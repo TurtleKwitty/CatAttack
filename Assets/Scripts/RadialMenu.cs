@@ -11,39 +11,45 @@ public class RadialMenu : MonoBehaviour
     // valeur de l'offset pour la distance entre le joueur et la position de construction
     [SerializeField] private float offsetValue;
     [SerializeField] GameObject radialMenu;
-    private Vector3 offset;
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private Camera cam;
-    Vector3 positionToBuild;
-    //[SerializeField] GameObject player;
+
+    private Vector3 positionToBuild;
+    private Vector3 offset;
+    private GameObject selectedElement;
     void Start()
     {
         offset = new Vector3(0, offsetValue, 0);
     }
 
     // fonction appelée quand le joueur presse sur A
-    public void Build(int index)
+    public void Build()
     {
         positionToBuild = transform.position + transform.TransformDirection(offset);
 
+        if(selectedElement != null)
+        Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+    }
+
+    public void SelectElement(int index)
+    {
         switch (index)
         {
             case 0:
-                Instantiate(elementsToDisplay[0], positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+                selectedElement = elementsToDisplay[0];
                 break;
             case 1:
-                Instantiate(elementsToDisplay[1], positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+                selectedElement = elementsToDisplay[1];
                 break;
             case 2:
-                Debug.Log("Instantiate third element");
+                Debug.Log("Select third element");
                 break;
             case 3:
-                Debug.Log("Instantiate fourth element");
+                Debug.Log("Select fourth element");
                 break;
             default:
                 break;
         }
-
     }
 
     // future fonction d'affichage du menu
