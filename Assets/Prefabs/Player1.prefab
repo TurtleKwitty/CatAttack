@@ -170,6 +170,7 @@ MonoBehaviour:
   - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
   rb: {fileID: 1748216643810573245}
   offsetValue: 0
+  radialMenu: {fileID: 0}
 --- !u!61 &1748216643810573247
 BoxCollider2D:
   m_ObjectHideFlags: 0

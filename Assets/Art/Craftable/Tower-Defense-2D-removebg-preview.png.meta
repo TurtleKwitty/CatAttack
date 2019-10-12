@@ -1,0 +1,967 @@
+fileFormatVersion: 2
+guid: 5dca9662ebb76ed4aa8f248ba134f2bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6660341077488411122
+    second: Tower-Defense-2D-removebg-preview_0
+  - first:
+      213: 219345031509733037
+    second: Tower-Defense-2D-removebg-preview_1
+  - first:
+      213: -2837531001755178960
+    second: Tower-Defense-2D-removebg-preview_2
+  - first:
+      213: 1347504868758539916
+    second: Tower-Defense-2D-removebg-preview_3
+  - first:
+      213: -4712724512488934102
+    second: Tower-Defense-2D-removebg-preview_4
+  - first:
+      213: -7767260405606501902
+    second: Tower-Defense-2D-removebg-preview_5
+  - first:
+      213: -8467245867715697796
+    second: Tower-Defense-2D-removebg-preview_6
+  - first:
+      213: -6437326003653310027
+    second: Tower-Defense-2D-removebg-preview_7
+  - first:
+      213: 2120445062343558010
+    second: Tower-Defense-2D-removebg-preview_8
+  - first:
+      213: -8416629175975362124
+    second: Tower-Defense-2D-removebg-preview_9
+  - first:
+      213: -4694192932676875116
+    second: Tower-Defense-2D-removebg-preview_10
+  - first:
+      213: 1973191260155982894
+    second: Tower-Defense-2D-removebg-preview_11
+  - first:
+      213: 6365325145796372467
+    second: Tower-Defense-2D-removebg-preview_12
+  - first:
+      213: -8308169088763110200
+    second: Tower-Defense-2D-removebg-preview_13
+  - first:
+      213: 2873349828296607444
+    second: Tower-Defense-2D-removebg-preview_14
+  - first:
+      213: -367786030035928423
+    second: Tower-Defense-2D-removebg-preview_15
+  - first:
+      213: -226789982350373861
+    second: Tower-Defense-2D-removebg-preview_16
+  - first:
+      213: 4532217030125008173
+    second: Tower-Defense-2D-removebg-preview_17
+  - first:
+      213: -25129809216853158
+    second: Tower-Defense-2D-removebg-preview_18
+  - first:
+      213: -4211266411177124473
+    second: Tower-Defense-2D-removebg-preview_19
+  - first:
+      213: 4853474607892646833
+    second: Tower-Defense-2D-removebg-preview_20
+  - first:
+      213: -6384685311548134962
+    second: Tower-Defense-2D-removebg-preview_21
+  - first:
+      213: 6032426014972754643
+    second: Tower-Defense-2D-removebg-preview_22
+  - first:
+      213: 553777223268812097
+    second: Tower-Defense-2D-removebg-preview_23
+  - first:
+      213: -2445992777217287143
+    second: Tower-Defense-2D-removebg-preview_24
+  - first:
+      213: 8805864175202724807
+    second: Tower-Defense-2D-removebg-preview_25
+  - first:
+      213: 5679795084279206845
+    second: Tower-Defense-2D-removebg-preview_26
+  - first:
+      213: -1636176226892950197
+    second: Tower-Defense-2D-removebg-preview_27
+  - first:
+      213: 7893532630366571072
+    second: Tower-Defense-2D-removebg-preview_28
+  - first:
+      213: -8102728768606789438
+    second: Tower-Defense-2D-removebg-preview_29
+  - first:
+      213: 7052169084849424219
+    second: Tower-Defense-2D-removebg-preview_30
+  - first:
+      213: 5684886225874254188
+    second: Tower-Defense-2D-removebg-preview_31
+  - first:
+      213: -3984886861366665900
+    second: Tower-Defense-2D-removebg-preview_32
+  - first:
+      213: -2607950203668476754
+    second: Tower-Defense-2D-removebg-preview_33
+  - first:
+      213: -707373473409019385
+    second: Tower-Defense-2D-removebg-preview_34
+  - first:
+      213: -1380958102079452239
+    second: Tower-Defense-2D-removebg-preview_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 248
+        width: 66
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7042f733e8e66c54cb74143570723c52
+      internalID: -6660341077488411122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 247
+        width: 70
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73fbcc80d9cff14e92460ad4e335507
+      internalID: 219345031509733037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 248
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521f9977b38998845a033812547fdbbf
+      internalID: -2837531001755178960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 247
+        width: 69
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28a797d40df0c2419203b82e407e4d9
+      internalID: 1347504868758539916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 247
+        width: 69
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0503eade5b1d9de4c99fe97700ba1e34
+      internalID: -4712724512488934102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 247
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ee09f8518363647909e128b5ba5026
+      internalID: -7767260405606501902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 135
+        width: 64
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd3bebe9124b84429c659a2bbab1bab
+      internalID: -8467245867715697796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 135
+        width: 67
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65af58bde0a6794d89371271da4caef
+      internalID: -6437326003653310027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 135
+        width: 66
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff58e21e519d2444abc8708dc7e8b0e
+      internalID: 2120445062343558010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 134
+        width: 71
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dc4671020a2cb459e31e398cb3b07a
+      internalID: -8416629175975362124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 135
+        width: 70
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c94f1a0a736ed74eb93d0ac99acdb03
+      internalID: -4694192932676875116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 135
+        width: 70
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8969832eb58a8469c1c8154c449e03
+      internalID: 1973191260155982894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 28
+        width: 99
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3528092ca9b140f4a98217551572ae89
+      internalID: 6365325145796372467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 81
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aad85fd3fbca1d4abb29bf69d423855
+      internalID: -8308169088763110200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 82
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c6ab6aaa30c494a842f38b81de12d4
+      internalID: 2873349828296607444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 95
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0820669681c302343b057b6da29d3b7f
+      internalID: -367786030035928423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 95
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9998d9a1791b44d98f1c70822ad8c4
+      internalID: -226789982350373861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 94
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7989d531a73197b40941ae6ed819f4b3
+      internalID: 4532217030125008173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 95
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e854cbb6b6c1d64f8f0636fe0a781f7
+      internalID: -25129809216853158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 114
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988dbc6dc54f6cc479603fceb7a32501
+      internalID: -4211266411177124473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 95
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149219b26a3a000439cd9737e27803c4
+      internalID: 4853474607892646833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 95
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f4eeb4c3c903d4eba7b101b8f2d33d
+      internalID: -6384685311548134962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 27
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3168d5c769c7ac64485fd1ad62dfeb29
+      internalID: 6032426014972754643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 33
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ac5c0f385810649b410444e55e0336
+      internalID: 553777223268812097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 58
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f0e62c68d7e6f40846e603aa5ed7f0
+      internalID: -2445992777217287143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 58
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8922315a1d9a65144ac855ec9c17a4da
+      internalID: 8805864175202724807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 58
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccbbb6d8c63df648b420df60eaac930
+      internalID: 5679795084279206845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 58
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7f6b4f2e8aa104293b8d678dc49250
+      internalID: -1636176226892950197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 57
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bc709d74a6aab46baa17421e6868b5
+      internalID: 7893532630366571072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 58
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b6f29093a620748834a875a3498413
+      internalID: -8102728768606789438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 24
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72eceba3b06d6943928f685a842e7bf
+      internalID: 7052169084849424219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 24
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37de4ad4d46040a4aa0e07105256cad1
+      internalID: 5684886225874254188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 25
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ea44e15cfd7e4293d15fc8361e053
+      internalID: -3984886861366665900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_33
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 23
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fb1cbae97a90d4cac9e12015170e71
+      internalID: -2607950203668476754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_34
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 23
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df23885377e9644ab09e9f4a3e8a7a4
+      internalID: -707373473409019385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tower-Defense-2D-removebg-preview_35
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 25
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6462d241016e3540b674a83730c45dc
+      internalID: -1380958102079452239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ac180fa8e27ed4546beb931b50c3ed83
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

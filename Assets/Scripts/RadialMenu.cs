@@ -10,6 +10,7 @@ public class RadialMenu : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     // valeur de l'offset pour la distance entre le joueur et la position de construction
     [SerializeField] private float offsetValue;
+    [SerializeField] GameObject radialMenu;
     private Vector3 offset;
     void Start()
     {
@@ -26,6 +27,11 @@ public class RadialMenu : MonoBehaviour
     // future fonction d'affichage du menu
     public void DisplayRadialMenu()
     {
-        
+        radialMenu.SetActive(true);
+    }
+
+    public void HideRadialMenu()
+    {
+        radialMenu.SetActive(false);
     }
 }
