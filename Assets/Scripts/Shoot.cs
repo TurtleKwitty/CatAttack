@@ -6,16 +6,28 @@ public class Shoot : MonoBehaviour
 {
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject bulletPrefab;
+    public float timeBetweenShots;
     private float bulletSpeed = 20f;
     private bool canShoot = true;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButton("FirePlayer1") && canShoot == true)
+        if (gameObject.name == "Player1")
         {
-            Shooting();
-            StartCoroutine(WaitForShooting());
+            if (Input.GetButton("FirePlayer1") && canShoot == true)
+            {
+                Shooting();
+                StartCoroutine(WaitForShooting());
+            }
+        }
+        else if (gameObject.name == "Player2")
+        {
+            if (Input.GetButton("FirePlayer2") && canShoot == true)
+            {
+                Shooting();
+                StartCoroutine(WaitForShooting());
+            }
         }
     }
 
@@ -29,7 +41,7 @@ public class Shoot : MonoBehaviour
     IEnumerator WaitForShooting()
     {
         canShoot = false;
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;
     }
 }

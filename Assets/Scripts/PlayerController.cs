@@ -60,6 +60,36 @@ public class PlayerController : MonoBehaviour
                 JoystickAim = Vector2.zero;
             }
         }
+
+        if(player.name == "Player2")
+        {
+            movement.x = Input.GetAxisRaw("HorizontalPlayer2");
+            movement.y = Input.GetAxisRaw("VerticalPlayer2");
+
+            if (Input.GetButtonDown("MenuRadialPlayer2"))
+            {
+                radialMenuScript.DisplayRadialMenu();
+                isBuilding = true;
+            }
+            else if (Input.GetButtonUp("MenuRadialPlayer2"))
+            {
+                mainRadialScript.ExecutOnClick();
+                radialMenuScript.HideRadialMenu();
+                isBuilding = false;
+            }
+            else if (!Input.GetButton("LookBackPlayer2") && (movement.x != 0f || movement.y != 0f))
+            {
+                JoystickAim = new Vector2(transform.position.x + movement.x, transform.position.y + movement.y);
+            }
+            else if (Input.GetButton("LookBackPlayer2") && (movement.x != 0f || movement.y != 0f))
+            {
+                JoystickAim = new Vector2(transform.position.x - movement.x, transform.position.y - movement.y);
+            }
+            else
+            {
+                JoystickAim = Vector2.zero;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -71,9 +101,14 @@ public class PlayerController : MonoBehaviour
 
         if (JoystickAim != Vector2.zero && isBuilding == false)
         {
+            rb.freezeRotation = false;
             Vector2 lookDir = JoystickAim - rb.position;
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
             rb.MoveRotation(Mathf.LerpAngle(rb.rotation, angle, 30f * Time.fixedDeltaTime));
+        }
+        else
+        {
+            rb.freezeRotation = true;
         }
     }
 }

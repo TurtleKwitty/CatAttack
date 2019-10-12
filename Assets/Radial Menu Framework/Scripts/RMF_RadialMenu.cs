@@ -177,7 +177,6 @@ public class RMF_RadialMenu : MonoBehaviour {
     private void selectButton(int i) {
 
           //if (elements[i].active == false) {
-            Debug.Log("enter here");
             elements[i].highlightThisElement(pointer); //Select this one
 
             if (previousActiveIndex != i) 

@@ -14,6 +14,8 @@ public class RadialMenu : MonoBehaviour
     private Vector3 offset;
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private Camera cam;
+    Vector3 positionToBuild;
+    //[SerializeField] GameObject player;
     void Start()
     {
         offset = new Vector3(0, offsetValue, 0);
@@ -22,9 +24,9 @@ public class RadialMenu : MonoBehaviour
     // fonction appelée quand le joueur presse sur A
     public void Build(int index)
     {
-        Vector3 positionToBuild = transform.position + transform.TransformDirection(offset);
+        positionToBuild = transform.position + transform.TransformDirection(offset);
 
-        switch(index)
+        switch (index)
         {
             case 0:
                 Instantiate(elementsToDisplay[0], positionToBuild, Quaternion.Euler(0, 0, rb.rotation));

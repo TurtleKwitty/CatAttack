@@ -10,11 +10,12 @@ public class BulletScript : MonoBehaviour
     {
         Destroy(gameObject, 5f);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, .4f);
+        Destroy(effect, .3f);
         GameObject col = collision.gameObject;
 
         if (col.tag == "Ennemi")
