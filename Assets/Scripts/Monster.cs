@@ -30,10 +30,9 @@ public class Monster : MonoBehaviour
         trans.up = GameManager.Instance.Players[0].transform.position - trans.position;
 
         RaycastHit2D RaycastResult = Physics2D.Raycast(trans.position, trans.up, AttackRange);
-        if(RaycastResult && RaycastResult.collider.gameObject.layer == 10)
+        if(RaycastResult.transform != null && RaycastResult.transform.gameObject.layer == 10)
         {
-            Debug.Log("HIT");
-            RaycastResult.collider.gameObject.GetComponent<HealthManager>().Attack(AttackDamage);
+            RaycastResult.transform.GetComponent<HealthManager>().Attack(AttackDamage);
         }
     }
 }
