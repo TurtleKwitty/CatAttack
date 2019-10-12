@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
     private Vector2 JoystickAim;
     private GameObject player;
 
+    private void OnEnable()
+    {
+        GameManager.Instance.RegisterPlayer(gameObject);
+    }
+
     private void Start()
     {
         player = gameObject;
