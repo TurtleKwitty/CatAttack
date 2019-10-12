@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject hitEffect;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        Destroy(gameObject, 5f);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(effect, .4f);
+        GameObject col = collision.gameObject;
+
+        if (col.tag == "Ennemi")
+        {
+            // DO SOME SHIT WHEN BULLET TOUCH ENNEMI
+        }
     }
 }
