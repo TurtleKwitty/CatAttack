@@ -660,6 +660,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 258877459}
+    - target: {fileID: 1748216643810573244, guid: 56d2f3f90cfee564499292855a95a0d5,
+        type: 3}
+      propertyPath: offsetValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1748216643810573242, guid: 56d2f3f90cfee564499292855a95a0d5,
         type: 3}
       propertyPath: mainRadialScript

@@ -145,12 +145,10 @@ public class RMF_RadialMenu : MonoBehaviour {
 
         //Handles lazy selection. Checks the current angle, matches it to the index of an element, and then highlights that element.
         if (angleOffset != 0 && useLazySelection) {
-
             //Current element index we're pointing at.
             index = (int)(currentAngle / angleOffset);
 
             if (elements[index] != null) {
-
                 //Select it.
                 selectButton(index);
 
@@ -178,15 +176,15 @@ public class RMF_RadialMenu : MonoBehaviour {
     //Selects the button with the specified index.
     private void selectButton(int i) {
 
-          if (elements[i].active == false) {
-
+          //if (elements[i].active == false) {
+            Debug.Log("enter here");
             elements[i].highlightThisElement(pointer); //Select this one
 
             if (previousActiveIndex != i) 
                 elements[previousActiveIndex].unHighlightThisElement(pointer); //Deselect the last one.
             
 
-        }
+          //}
 
         previousActiveIndex = i;
 
