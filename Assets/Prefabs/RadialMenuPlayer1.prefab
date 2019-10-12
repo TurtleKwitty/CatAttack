@@ -1126,7 +1126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7542419819228342160
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1161,6 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt: {fileID: 0}
+  playerControllerScript: {fileID: 0}
   useGamepad: 1
   useLazySelection: 1
   useSelectionFollower: 1

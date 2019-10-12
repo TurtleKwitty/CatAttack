@@ -12,6 +12,8 @@ public class RadialMenu : MonoBehaviour
     [SerializeField] private float offsetValue;
     [SerializeField] GameObject radialMenu;
     private Vector3 offset;
+    [SerializeField] private RectTransform rectTransform;
+    [SerializeField] private Camera cam;
     void Start()
     {
         offset = new Vector3(0, offsetValue, 0);
@@ -27,6 +29,7 @@ public class RadialMenu : MonoBehaviour
     // future fonction d'affichage du menu
     public void DisplayRadialMenu()
     {
+        rectTransform.position = cam.WorldToScreenPoint(transform.position);
         radialMenu.SetActive(true);
     }
 

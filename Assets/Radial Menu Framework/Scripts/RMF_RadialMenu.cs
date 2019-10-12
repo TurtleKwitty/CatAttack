@@ -14,6 +14,8 @@ public class RMF_RadialMenu : MonoBehaviour {
     //public RectTransform baseCircleRT;
     //public Image selectionFollowerImage;
 
+    [SerializeField] PlayerController playerControllerScript;
+
     [Tooltip("Adjusts the radial menu for use with a gamepad or joystick. You might need to edit this script if you're not using the default horizontal and vertical input axes.")]
     public bool useGamepad = false;
 
@@ -99,19 +101,25 @@ public class RMF_RadialMenu : MonoBehaviour {
 
     }
 
+    public void MoveRadialMenu()
+    {
+
+    }
+
     // Update is called once per frame
     void Update() {
-        
+
         //If your gamepad uses different horizontal and vertical joystick inputs, change them here!
         //==============================================================================================
-        if (gameObject.name == "RadialMenuPlayer1")
-        {
-            joystickMoved = Input.GetAxis("HorizontalPlayer1") != 0.0 || Input.GetAxis("VerticalPlayer1") != 0.0;
-        }
-        else if (gameObject.name == "RadialMenuPlayer2")
-        {
-            joystickMoved = Input.GetAxis("HorizontalPlayer2") != 0.0 || Input.GetAxis("VerticalPlayer2") != 0.0;
-        }
+            if (gameObject.name == "RadialMenuPlayer1")
+            {
+                joystickMoved = Input.GetAxis("HorizontalMenu1") != 0.0 || Input.GetAxis("VerticalMenu1") != 0.0;
+            }
+            else if (gameObject.name == "RadialMenuPlayer2")
+            {
+                joystickMoved = Input.GetAxis("HorizontalMenu2") != 0.0 || Input.GetAxis("VerticalMenu2") != 0.0;
+            }
+
         //==============================================================================================
 
 
@@ -120,9 +128,9 @@ public class RMF_RadialMenu : MonoBehaviour {
         if (!useGamepad)
             rawAngle = Mathf.Atan2(Input.mousePosition.y - rt.position.y, Input.mousePosition.x - rt.position.x) * Mathf.Rad2Deg;
         else if(gameObject.name == "RadialMenuPlayer1")
-            rawAngle = Mathf.Atan2(-Input.GetAxis("VerticalPlayer1"), Input.GetAxis("HorizontalPlayer1")) * Mathf.Rad2Deg;
+            rawAngle = Mathf.Atan2(Input.GetAxis("VerticalMenu1"), Input.GetAxis("HorizontalMenu1")) * Mathf.Rad2Deg;
         else
-            rawAngle = Mathf.Atan2(Input.GetAxis("VerticalPlayer2"), Input.GetAxis("HorizontalPlayer2")) * Mathf.Rad2Deg;
+            rawAngle = Mathf.Atan2(Input.GetAxis("VerticalMenu2"), Input.GetAxis("HorizontalMenu2")) * Mathf.Rad2Deg;
 
         //If no gamepad, update the angle always. Otherwise, only update it if we've moved the joystick.
         if (!useGamepad)

@@ -23,13 +23,17 @@ public class PlayerController : MonoBehaviour
         radialMenuScript = GetComponent<RadialMenu>();
     }
 
+    public bool GetIsBuilding()
+    {
+        return isBuilding;
+    }
     // Update is called once per frame
     void Update()
     {
         if (player.name == "Player1")
         {
             movement.x = Input.GetAxisRaw("HorizontalPlayer1");
-            movement.y = -Input.GetAxisRaw("VerticalPlayer1");
+            movement.y = Input.GetAxisRaw("VerticalPlayer1");
 
             if(Input.GetButtonDown("MenuRadialPlayer1"))
             {
@@ -47,7 +51,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetButton("LookBackPlayer1") && (movement.x != 0f || movement.y != 0f))
             {
-                Debug.Log("look back");
                 JoystickAim = new Vector2(transform.position.x - movement.x, transform.position.y - movement.y);
             }
             else
@@ -61,14 +64,13 @@ public class PlayerController : MonoBehaviour
     {
         if (isBuilding == false)
         {
-            //rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
 
-        if (JoystickAim != Vector2.zero)
+        if (JoystickAim != Vector2.zero && isBuilding == false)
         {
             Vector2 lookDir = JoystickAim - rb.position;
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-            Debug.Log(angle);
             rb.MoveRotation(Mathf.LerpAngle(rb.rotation, angle, 30f * Time.fixedDeltaTime));
         }
     }
