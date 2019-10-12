@@ -20,10 +20,28 @@ public class RadialMenu : MonoBehaviour
     }
 
     // fonction appelée quand le joueur presse sur A
-    public void Build()
+    public void Build(int index)
     {
         Vector3 positionToBuild = transform.position + transform.TransformDirection(offset);
-        Instantiate(elementsToDisplay[1], positionToBuild, Quaternion.Euler(0,0,rb.rotation));
+
+        switch(index)
+        {
+            case 0:
+                Instantiate(elementsToDisplay[0], positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+                break;
+            case 1:
+                Instantiate(elementsToDisplay[1], positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+                break;
+            case 2:
+                Debug.Log("Instantiate third element");
+                break;
+            case 3:
+                Debug.Log("Instantiate fourth element");
+                break;
+            default:
+                break;
+        }
+
     }
 
     // future fonction d'affichage du menu

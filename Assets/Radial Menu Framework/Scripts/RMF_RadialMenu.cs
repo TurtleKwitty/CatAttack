@@ -105,6 +105,11 @@ public class RMF_RadialMenu : MonoBehaviour {
     {
 
     }
+    public void ExecutOnClick()
+    {
+        ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+    }
+
 
     // Update is called once per frame
     void Update() {
@@ -150,10 +155,10 @@ public class RMF_RadialMenu : MonoBehaviour {
                 selectButton(index);
 
                 //If we click or press a "submit" button (Button on joystick, enter, or spacebar), then we'll execut the OnClick() function for the button.
-                if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Submit")) {
+                //if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Submit")) {
 
-                    ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
-                }
+                //    ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+                //}
             }
 
         }
@@ -167,6 +172,7 @@ public class RMF_RadialMenu : MonoBehaviour {
         } 
 
     }
+
 
 
     //Selects the button with the specified index.

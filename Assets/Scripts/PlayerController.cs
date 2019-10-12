@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private RMF_RadialMenu mainRadialScript;
     private bool isBuilding = false;
     private RadialMenu radialMenuScript;
     private Vector2 movement;
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
             }
             else if(Input.GetButtonUp("MenuRadialPlayer1"))
             {
+                mainRadialScript.ExecutOnClick();
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
             }
