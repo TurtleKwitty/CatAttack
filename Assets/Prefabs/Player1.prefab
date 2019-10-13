@@ -140,13 +140,11 @@ MonoBehaviour:
   elementsToDisplay:
   - {fileID: 3083967397564030294, guid: 0b5e753dac795514ab69cf3b42924ccd, type: 3}
   - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
+  radMenus:
+  - {fileID: 4963354835674994361, guid: 6f74c5e0e5e52884cafd1f8729c4b080, type: 3}
+  - {fileID: 8638039613159872776, guid: 89b91060c06941048ac2cb33ee6ba269, type: 3}
   rb: {fileID: 5066594972694821517}
   offsetValue: 1
-  radialMenu: {fileID: 4963354835674994361, guid: 6f74c5e0e5e52884cafd1f8729c4b080,
-    type: 3}
-  rectTransform: {fileID: 4963354835674994362, guid: 6f74c5e0e5e52884cafd1f8729c4b080,
-    type: 3}
-  cam: {fileID: 0}
 --- !u!61 &5066594972694821519
 BoxCollider2D:
   m_ObjectHideFlags: 0

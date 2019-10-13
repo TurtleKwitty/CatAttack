@@ -5,20 +5,31 @@ using UnityEngine;
 public class SpawnPlayers : MonoBehaviour
 {
     [SerializeField] private List<GameObject> players;
+    [SerializeField] private List<GameObject> radMenus;
+    [SerializeField] private Transform canvas;
     private int numberOfPlayers;
     private Vector3 position;
     void Start()
     {
         position = Vector3.zero;
-        position.x = -10f;
+        position.x = -5f;
         numberOfPlayers = PlayersNumber.NumberOfPlayers;
-        Debug.Log(numberOfPlayers);
 
         for(int i = 0; i <= numberOfPlayers; i++)
         {
-            GameObject Player = Instantiate(players[i], position, Quaternion.identity);
-            Player.name = players[i].name;
-            position.x += 20f;
+            GameObject player = Instantiate(players[i], position, Quaternion.identity);
+            position.x += 10f;
+
+            GameObject menu = Instantiate(radMenus[i], Vector3.zero, Quaternion.identity);
+            menu.transform.parent = canvas;
+
+            player.GetComponent<RadialMenu>().radialMenu = menu;
+            player.GetComponent<RadialMenu>().rectTransform = menu.GetComponent<RectTransform>();
+
+            player.name = players[i].name;
+            menu.name = radMenus[i].name;
+
+            menu.SetActive(false);
         }
     }
 }
