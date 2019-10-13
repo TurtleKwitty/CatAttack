@@ -52,14 +52,12 @@ public class Monster : MonoBehaviour
         }
         
         AttackTimer -= Time.deltaTime;
-        Debug.Log(AttackTimer);
         if (AttackTimer <= 0)
         {
             RaycastHit2D RaycastResult = Physics2D.Raycast(trans.position, trans.up, AttackRange);
             if (RaycastResult.collider != null) Debug.Log(RaycastResult.transform.gameObject);
             if (RaycastResult.transform != null && RaycastResult.transform.gameObject.layer == 10)
             {
-                Debug.Log("HIT");
                 RaycastResult.transform.GetComponent<HealthManager>().Attack(AttackDamage);
             }
             AttackTimer = 1 / AttacksPerSecond;

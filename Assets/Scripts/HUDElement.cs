@@ -17,7 +17,5 @@ public class HUDElement : MonoBehaviour
     void Start()
     {
         HUDManager.Delegates[PlayerID, ResourceID] = UpdateHUDElement;
-        Debug.Log(PlayerID);
-        Debug.Log(ResourceID);
     }
 }

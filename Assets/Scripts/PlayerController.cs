@@ -18,6 +18,11 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.RegisterPlayer(gameObject);
     }
 
+    private void OnDestroy()
+    {
+        GameManager.Instance.UnRegisterPlayer(gameObject);
+    }
+
     private void Start()
     {
         player = gameObject;
@@ -48,7 +53,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetButtonDown("BuildPlayer1") && isBuilding == false)
             {
-                radialMenuScript.Build();
+                radialMenuScript.Build(0);
             }
             else if (!Input.GetButton("LookBackPlayer1") && (movement.x != 0f || movement.y != 0f))
             {
@@ -81,7 +86,7 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetButtonDown("BuildPlayer2") && isBuilding == false)
             {
-                radialMenuScript.Build();
+                radialMenuScript.Build(1);
             }
             else if (!Input.GetButton("LookBackPlayer2") && (movement.x != 0f || movement.y != 0f))
             {

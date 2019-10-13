@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(MapManager))]
 public class GameManager: MonoBehaviour
@@ -17,6 +18,15 @@ public class GameManager: MonoBehaviour
     private bool Enabled = false;
 
     private int frame = 0;
+
+    public void Kill()
+    {
+        gameManager = null;
+        spawner = null;
+        MapManager.Instance.Kill();
+        Destroy(gameObject);
+        Destroy(this);
+    }
 
     public static GameManager Instance
     {
@@ -56,13 +66,25 @@ public class GameManager: MonoBehaviour
         Players.Add(player);
     }
 
+    public void UnRegisterPlayer(GameObject player)
+    {
+        Debug.Log("Unreg");
+        Players.Remove(player);
+        if (Players.Count < 1) SceneManager.LoadScene("GameOver");
+    }
+
+    public void ReadyGame()
+    {
+        LoadManager.Ready = true;
+    }
+
     public void StartGame()
     {
-        if(spawner != null)
+        if (spawner != null)
         {
             Destroy(spawner);
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
         Instantiate(SpawnerPrefab, transform);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
 }
