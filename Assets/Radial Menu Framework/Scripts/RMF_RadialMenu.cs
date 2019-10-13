@@ -57,6 +57,8 @@ public class RMF_RadialMenu : MonoBehaviour {
 
     bool joystickMoved;
 
+    private RadialMenu radialMenuScript;
+
     void Awake() {
 
         pointer = new PointerEventData(EventSystem.current);
@@ -98,6 +100,8 @@ public class RMF_RadialMenu : MonoBehaviour {
                 selectionFollowerContainer.rotation = Quaternion.Euler(0, 0, -globalOffset); //Point the selection follower at the first element.
         }
 
+        radialMenuScript = transform.parent.parent.GetComponent<RadialMenu>();
+        Debug.Log(transform.parent.parent);
     }
 
     public void MoveRadialMenu()
@@ -151,14 +155,17 @@ public class RMF_RadialMenu : MonoBehaviour {
                 {
                     if (Input.GetButtonDown("BuildPlayer1"))
                     {
-                        //elements[index].button.onClick.Invoke();
+                        elements[index].button.onClick.AddListener(delegate { radialMenuScript.SelectElement(index); });
                         ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
                     }
                 }
                 else if(gameObject.name == "RadialMenuPlayer2(Clone)")
                 {
                     if (Input.GetButtonDown("BuildPlayer2"))
+                    {
+                        elements[index].button.onClick.AddListener(delegate { radialMenuScript.SelectElement(index); });
                         ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+                    }
                 }
             }
 

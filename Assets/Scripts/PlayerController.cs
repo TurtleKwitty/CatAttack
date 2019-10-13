@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
             }
-            else if (Input.GetButtonDown("BuildPlayer2"))
+            else if (Input.GetButtonDown("BuildPlayer2") && isBuilding == false)
             {
                 radialMenuScript.Build();
             }

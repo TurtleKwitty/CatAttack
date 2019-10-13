@@ -28,24 +28,27 @@ public class RadialMenu : MonoBehaviour
     public void Build()
     {
         positionToBuild = transform.position + transform.TransformDirection(offset);
-
+        Debug.Log(gameObject);
         if (selectedElement != null)
             Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
         else
             Debug.Log("selected element = null");
     }
 
-    public void SelectElement(int index)
+    public void DoSmth()
     {
-        switch (index)
+        Debug.Log("do smth");
+    }
+    public void SelectElement(int idx_)
+    {
+        switch (idx_)
         {
             case 0:
-                Debug.Log("enter");
-                selectedElement = elementsToDisplay[index];
-                Debug.Log(selectedElement);
+                selectedElement = elementsToDisplay[idx_];
+                Debug.Log(gameObject);
                 break;
             case 1:
-                selectedElement = elementsToDisplay[index];
+                selectedElement = elementsToDisplay[idx_];
                 break;
             case 2:
                 Debug.Log("Select third element");
