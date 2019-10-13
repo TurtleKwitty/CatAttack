@@ -258,6 +258,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1CanGather: 0
+  offset: 0.4
+  timeForGather: 0.3
+  sprites:
+  - {fileID: -2705597995764985619, guid: 38c4fa9b4d60db7418b66f887f769b04, type: 3}
+  - {fileID: -8501297529017742733, guid: 38c4fa9b4d60db7418b66f887f769b04, type: 3}
+  - {fileID: 3184120798885481848, guid: 38c4fa9b4d60db7418b66f887f769b04, type: 3}
+  id: rock
+  resourceAmount: 10
+  MaxResourceAmount: 10
 --- !u!1 &206946051
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +538,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1CanGather: 0
+  offset: 0
+  timeForGather: 0.3
+  sprites:
+  - {fileID: -528837131520387009, guid: 4c6fb3b925f7422499682fba5a109de3, type: 3}
+  - {fileID: 2858282966663250856, guid: 4c6fb3b925f7422499682fba5a109de3, type: 3}
+  - {fileID: 4621740753562235160, guid: 4c6fb3b925f7422499682fba5a109de3, type: 3}
+  id: ore
+  resourceAmount: 20
+  MaxResourceAmount: 20
 --- !u!1 &1196925604
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +686,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1CanGather: 0
+  offset: 0.8
+  timeForGather: 0.3
+  sprites:
+  - {fileID: 3818217323743452925, guid: 539d02f0f29290d4781295f2e78bd2ba, type: 3}
+  - {fileID: -271311362049036883, guid: 539d02f0f29290d4781295f2e78bd2ba, type: 3}
+  - {fileID: 21300000, guid: 957e6123bc393e64fbb5adcdb3705fd2, type: 3}
+  id: tree
+  resourceAmount: 15
+  MaxResourceAmount: 15
 --- !u!1 &1544522466
 GameObject:
   m_ObjectHideFlags: 0
