@@ -245,8 +245,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt: {fileID: 0}
-  playerControllerScript: {fileID: 5695500495929360388, guid: 77c33ba3eeeae8046af07b4da3bc2353,
-    type: 3}
   useGamepad: 1
   useLazySelection: 1
   useSelectionFollower: 1
@@ -260,11 +258,6 @@ MonoBehaviour:
   globalOffset: 45
   currentAngle: 0
   index: 0
-  buttons:
-  - {fileID: 4963354836399492939}
-  - {fileID: 4963354837107384844}
-  - {fileID: 4963354836674851997}
-  - {fileID: 4963354836002482619}
 --- !u!225 &4963354835674994363
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -340,7 +333,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6fd7603617763a0478959b55476d7d5c, type: 3}
+  m_Sprite: {fileID: -6108889420429456849, guid: 058901d8fe4f52d4393f44151d9a7b03,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -542,7 +536,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6237ebe3d688374bad58b17fd2c6b9f, type: 3}
+  m_Sprite: {fileID: -3309781605116015348, guid: 058901d8fe4f52d4393f44151d9a7b03,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1103,7 +1098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1347504868758539916, guid: 5dca9662ebb76ed4aa8f248ba134f2bb,
+  m_Sprite: {fileID: 2403724249865808194, guid: 058901d8fe4f52d4393f44151d9a7b03,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1534,7 +1529,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9df86e4e6d12654faa879d7813f47f7, type: 3}
+  m_Sprite: {fileID: 5682393469540925955, guid: 058901d8fe4f52d4393f44151d9a7b03,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

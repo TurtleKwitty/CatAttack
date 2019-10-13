@@ -227,13 +227,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToDisplay:
-  - {fileID: 2677954792611831290, guid: 86bec8befedeb8b4c929abf9ee7704f6, type: 3}
   - {fileID: 432808711057613584, guid: b6a21e5e157157e45a6a69106ee338b9, type: 3}
-  - {fileID: 9176223357847220810, guid: 07fea4354056a3944a07aa471f2f28b7, type: 3}
+  - {fileID: 432808711057613584, guid: c2ca5181de55cad4fbbebc32089b3b52, type: 3}
+  - {fileID: 432808711057613584, guid: e7e5eb6a3067dfa43b3fdfdd785a58ac, type: 3}
+  - {fileID: 432808711057613584, guid: 73dd11caece0f8144b9983f1c509326a, type: 3}
   BuildBrush:
-  - {fileID: 11400000, guid: 4d92ff45a7ff3f54880da901e89484bf, type: 2}
-  - {fileID: 11400000, guid: ce67c9c6b6b575548a383ff82adc0ea4, type: 2}
-  - {fileID: 11400000, guid: 66ae993d14420d54cac3dcddb5842e6c, type: 2}
+  - {fileID: 11400000, guid: 197eaa54bace3c541a1e42d75721be45, type: 2}
+  - {fileID: 11400000, guid: 8ec4dddfdd26c904fad2eb3493c898ea, type: 2}
+  - {fileID: 11400000, guid: 5c54ab92fdfc30a4b826a4ad41024e94, type: 2}
+  - {fileID: 11400000, guid: 871f2189694e0bf4fa84e72650de973e, type: 2}
   rb: {fileID: 7095976680119661}
   offsetValue: 1
   radialMenu: {fileID: 0}
