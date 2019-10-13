@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioClip bigExplosion, chopWood, laserShot1, laserShot2, metalHit, mineExplosion, miningRock;
+    public static AudioClip bigExplosion, chopWood, laserShot1, laserShot2, metalHit, mineExplosion, miningRock, mainTheme;
     static AudioSource audioSrc;
     void Start()
     {
@@ -15,8 +15,12 @@ public class AudioManager : MonoBehaviour
         metalHit = Resources.Load<AudioClip>("metalHit");
         mineExplosion = Resources.Load<AudioClip>("mineExplosion");
         miningRock = Resources.Load<AudioClip>("miningRock");
+        mainTheme = Resources.Load<AudioClip>("mainTheme");
 
         audioSrc = GetComponent<AudioSource>();
+
+        audioSrc.Play();
+        
     }
 
     public static void PlaySound(string clip)

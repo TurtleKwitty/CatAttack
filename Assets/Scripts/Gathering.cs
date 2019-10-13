@@ -89,6 +89,7 @@ public class Gathering : MonoBehaviour
             }
 
             resourceAmount--;
+            AudioManager.PlaySound(soundToPlay);
             player1ResourcesScript.AddResource(1, id);
 
             StartCoroutine(GatheringTime(0));
@@ -102,6 +103,7 @@ public class Gathering : MonoBehaviour
             }
 
             resourceAmount--;
+            AudioManager.PlaySound(soundToPlay);
             player2ResourcesScript.AddResource(1, id);
 
             StartCoroutine(GatheringTime(1));
