@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rt: {fileID: 0}
-  playerControllerScript: {fileID: 5066594972694821514, guid: 77c33ba3eeeae8046af07b4da3bc2353,
+  playerControllerScript: {fileID: 5695500495929360388, guid: 77c33ba3eeeae8046af07b4da3bc2353,
     type: 3}
   useGamepad: 1
   useLazySelection: 1
@@ -463,7 +463,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5695500495929360390, guid: 77c33ba3eeeae8046af07b4da3bc2353,
+          type: 3}
         m_MethodName: SelectElement
         m_Mode: 3
         m_Arguments:
@@ -739,7 +740,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5695500495929360390, guid: 77c33ba3eeeae8046af07b4da3bc2353,
+          type: 3}
         m_MethodName: SelectElement
         m_Mode: 3
         m_Arguments:
@@ -1024,7 +1026,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5695500495929360390, guid: 77c33ba3eeeae8046af07b4da3bc2353,
+          type: 3}
         m_MethodName: SelectElement
         m_Mode: 3
         m_Arguments:
@@ -1455,7 +1458,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 5695500495929360390, guid: 77c33ba3eeeae8046af07b4da3bc2353,
+          type: 3}
         m_MethodName: SelectElement
         m_Mode: 3
         m_Arguments:

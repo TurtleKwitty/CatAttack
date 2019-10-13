@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "Player1")
+        if (gameObject.name == "Player1(Clone)")
         {
             if (Input.GetButton("FirePlayer1") && canShoot == true)
             {
@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour
                 StartCoroutine(WaitForShooting());
             }
         }
-        else if (gameObject.name == "Player2")
+        else if (gameObject.name == "Player2(Clone)")
         {
             if (Input.GetButton("FirePlayer2") && canShoot == true)
             {

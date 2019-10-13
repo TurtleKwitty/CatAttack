@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.Instance.RegisterPlayer(gameObject);
+        //GameManager.Instance.RegisterPlayer(gameObject);
     }
 
     private void Start()
@@ -31,23 +31,22 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.name == "Player1")
+        if (player.name == "Player1(Clone)")
         {
             movement.x = Input.GetAxisRaw("HorizontalPlayer1");
             movement.y = Input.GetAxisRaw("VerticalPlayer1");
 
-            if(Input.GetButtonDown("MenuRadialPlayer1"))
+            if (Input.GetButtonDown("MenuRadialPlayer1"))
             {
                 radialMenuScript.DisplayRadialMenu();
                 isBuilding = true;
             }
-            else if(Input.GetButtonUp("MenuRadialPlayer1"))
+            else if (Input.GetButtonUp("MenuRadialPlayer1"))
             {
-                mainRadialScript.ExecutOnClick();
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
             }
-            else if(Input.GetButtonDown("BuildPlayer1"))
+            else if (Input.GetButtonDown("BuildPlayer1") && isBuilding == false)
             {
                 radialMenuScript.Build();
             }
@@ -65,7 +64,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(player.name == "Player2")
+        if(player.name == "Player2(Clone)")
         {
             movement.x = Input.GetAxisRaw("HorizontalPlayer2");
             movement.y = Input.GetAxisRaw("VerticalPlayer2");
@@ -77,7 +76,6 @@ public class PlayerController : MonoBehaviour
             }
             else if (Input.GetButtonUp("MenuRadialPlayer2"))
             {
-                mainRadialScript.ExecutOnClick();
                 radialMenuScript.HideRadialMenu();
                 isBuilding = false;
             }

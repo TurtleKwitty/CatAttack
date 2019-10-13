@@ -16,9 +16,10 @@ public class RadialMenu : MonoBehaviour
 
     private Vector3 positionToBuild;
     private Vector3 offset;
-    private GameObject selectedElement;
+    public GameObject selectedElement;
     void Start()
     {
+        selectedElement = null;
         cam = Camera.main;
         offset = new Vector3(0, offsetValue, 0);
     }
@@ -28,8 +29,10 @@ public class RadialMenu : MonoBehaviour
     {
         positionToBuild = transform.position + transform.TransformDirection(offset);
 
-        if(selectedElement != null)
-        Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+        if (selectedElement != null)
+            Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+        else
+            Debug.Log("selected element = null");
     }
 
     public void SelectElement(int index)
@@ -37,10 +40,12 @@ public class RadialMenu : MonoBehaviour
         switch (index)
         {
             case 0:
-                selectedElement = elementsToDisplay[0];
+                Debug.Log("enter");
+                selectedElement = elementsToDisplay[index];
+                Debug.Log(selectedElement);
                 break;
             case 1:
-                selectedElement = elementsToDisplay[1];
+                selectedElement = elementsToDisplay[index];
                 break;
             case 2:
                 Debug.Log("Select third element");

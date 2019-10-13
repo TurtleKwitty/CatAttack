@@ -21,14 +21,15 @@ public class SpawnPlayers : MonoBehaviour
             position.x += 10f;
 
             GameObject menu = Instantiate(radMenus[i], Vector3.zero, Quaternion.identity);
-            menu.transform.parent = canvas;
+            menu.transform.SetParent(canvas, false);
 
             player.GetComponent<RadialMenu>().radialMenu = menu;
             player.GetComponent<RadialMenu>().rectTransform = menu.GetComponent<RectTransform>();
 
-            player.name = players[i].name;
-            menu.name = radMenus[i].name;
-
+            //player.name = players[i].name;
+           // menu.name = radMenus[i].name;
+            //menu.GetComponent<RMF_RadialMenu>().canExecuteOnClick = false;
+            
             menu.SetActive(false);
         }
     }

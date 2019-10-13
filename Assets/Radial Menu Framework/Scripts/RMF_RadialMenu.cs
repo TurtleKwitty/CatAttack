@@ -92,7 +92,6 @@ public class RMF_RadialMenu : MonoBehaviour {
 
     void Start() {
 
-
         if (useGamepad) {
             EventSystem.current.SetSelectedGameObject(gameObject, null); //We'll make this the active object when we start it. Comment this line to set it manually from another script.
             if (useSelectionFollower && selectionFollowerContainer != null)
@@ -105,22 +104,17 @@ public class RMF_RadialMenu : MonoBehaviour {
     {
 
     }
-    public void ExecutOnClick()
-    {
-        ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
-    }
 
 
     // Update is called once per frame
     void Update() {
-
         //If your gamepad uses different horizontal and vertical joystick inputs, change them here!
         //==============================================================================================
-            if (gameObject.name == "RadialMenuPlayer1")
+        if (gameObject.name == "RadialMenuPlayer1(Clone)")
             {
                 joystickMoved = Input.GetAxis("HorizontalMenu1") != 0.0 || Input.GetAxis("VerticalMenu1") != 0.0;
             }
-            else if (gameObject.name == "RadialMenuPlayer2")
+            else if (gameObject.name == "RadialMenuPlayer2(Clone)")
             {
                 joystickMoved = Input.GetAxis("HorizontalMenu2") != 0.0 || Input.GetAxis("VerticalMenu2") != 0.0;
             }
@@ -132,7 +126,7 @@ public class RMF_RadialMenu : MonoBehaviour {
         
         if (!useGamepad)
             rawAngle = Mathf.Atan2(Input.mousePosition.y - rt.position.y, Input.mousePosition.x - rt.position.x) * Mathf.Rad2Deg;
-        else if(gameObject.name == "RadialMenuPlayer1")
+        else if(gameObject.name == "RadialMenuPlayer1(Clone)")
             rawAngle = Mathf.Atan2(Input.GetAxis("VerticalMenu1"), Input.GetAxis("HorizontalMenu1")) * Mathf.Rad2Deg;
         else
             rawAngle = Mathf.Atan2(Input.GetAxis("VerticalMenu2"), Input.GetAxis("HorizontalMenu2")) * Mathf.Rad2Deg;
@@ -153,10 +147,19 @@ public class RMF_RadialMenu : MonoBehaviour {
                 selectButton(index);
 
                 //If we click or press a "submit" button (Button on joystick, enter, or spacebar), then we'll execut the OnClick() function for the button.
-                //if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Submit")) {
-
-                //    ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
-                //}
+                if (gameObject.name == "RadialMenuPlayer1(Clone)")
+                {
+                    if (Input.GetButtonDown("BuildPlayer1"))
+                    {
+                        //elements[index].button.onClick.Invoke();
+                        ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+                    }
+                }
+                else if(gameObject.name == "RadialMenuPlayer2(Clone)")
+                {
+                    if (Input.GetButtonDown("BuildPlayer2"))
+                        ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+                }
             }
 
         }
@@ -171,7 +174,11 @@ public class RMF_RadialMenu : MonoBehaviour {
 
     }
 
-
+    //public void ExecutOnClick()
+    //{
+    //    //ExecuteEvents.Execute(elements[index].button.gameObject, pointer, ExecuteEvents.submitHandler);
+    //    //elements[index].button.onClick.Invoke();
+    //}
 
     //Selects the button with the specified index.
     private void selectButton(int i) {
