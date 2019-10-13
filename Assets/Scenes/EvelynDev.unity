@@ -2038,10 +2038,10 @@ RectTransform:
   m_Father: {fileID: 1497284720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 115.16667, y: -20}
+  m_SizeDelta: {x: 0, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812409927
 MonoBehaviour:
@@ -3403,10 +3403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tiles:
   - {fileID: 11400000, guid: d33f4249627994548bbdbccb6ef7dd38, type: 2}
-  ResourceNodes:
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
+  ResourceBrush: {fileID: 0}
   NumResourceSpawn: 1000
 --- !u!4 &1817874994
 Transform:
@@ -3940,16 +3937,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 2293853583562783889, guid: 622d854ad499d3544aec04e965330be1,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2293853583562783889, guid: 622d854ad499d3544aec04e965330be1,
-        type: 3}
-      propertyPath: orthographic size
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 2293853583562783888, guid: 622d854ad499d3544aec04e965330be1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4004,6 +3991,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293853583562783889, guid: 622d854ad499d3544aec04e965330be1,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2293853583562783889, guid: 622d854ad499d3544aec04e965330be1,
+        type: 3}
+      propertyPath: orthographic size
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2293853583562783890, guid: 622d854ad499d3544aec04e965330be1, type: 3}

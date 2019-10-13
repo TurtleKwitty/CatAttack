@@ -546,11 +546,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tiles:
   - {fileID: 11400000, guid: d33f4249627994548bbdbccb6ef7dd38, type: 2}
-  ResourceNodes:
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
-  - {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
-  NumResourceSpawn: 100
+  ResourceBrush: {fileID: 11400000, guid: 4485cc73b97727e4984419c55e61c379, type: 2}
+  NumResourceSpawn: 1000
 --- !u!114 &1351832238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +602,7 @@ MonoBehaviour:
     seed: 0
     pivotPointRoot: {fileID: 0}
     spreadOutCount: 1
-  showGraphs: 1
+  showGraphs: 0
 --- !u!4 &1351832239
 Transform:
   m_ObjectHideFlags: 0

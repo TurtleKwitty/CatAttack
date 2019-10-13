@@ -15,7 +15,7 @@ public class MapManager : MonoBehaviour
     public static readonly int SizeY = 1000;
 
     [SerializeField] public Tile[] Tiles;
-    public GridBrushBase[] ResourceNodes;
+    public GridBrushBase ResourceBrush;
     public int NumResourceSpawn = 1000;
 
     private int frame = 0;
@@ -76,13 +76,10 @@ public class MapManager : MonoBehaviour
             }
 
             //Add Resource Nodes
-            for(int i = 0; i < ResourceNodes.Length; i++)
+            for(var n = 0; n < NumResourceSpawn; n++)
             {
-                for(var n = 0; n < NumResourceSpawn; n++)
-                {
-                    var Pos = new Vector3Int(Random.Range(-SizeX / 2, SizeX / 2), Random.Range(-SizeY / 2, SizeY / 2), 0);
-                    ResourceNodes[i].Paint(GridObject.GetComponent<Grid>(), Obstacles.gameObject, Pos);
-                }
+                var Pos = new Vector3Int(Random.Range(-SizeX / 2, SizeX / 2), Random.Range(-SizeY / 2, SizeY / 2), 0);
+                ResourceBrush.Paint(GridObject.GetComponent<Grid>(), Obstacles.gameObject, Pos);
             }
         }
     }
