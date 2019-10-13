@@ -14,12 +14,12 @@ public class LoadManager : MonoBehaviour
         {
             if (Loading)
             {
-                transform.GetChild(0).gameObject.SetActive(false);
-                transform.GetChild(1).gameObject.SetActive(true);
+                transform.GetChild(1).gameObject.SetActive(false);
+                transform.GetChild(2).gameObject.SetActive(true);
             }
             if (Input.GetButtonDown("BuildPlayer1"))
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+                GameManager.Instance.StartGame();
             }
         }
     }

@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     {
         if (player == null)
         {
+            Debug.Log(GameManager.Instance.Players[0]);
             if (GameManager.Instance.Players[0] != null)
             {
                 player = GameManager.Instance.Players[0].transform;
@@ -38,10 +39,10 @@ public class Spawner : MonoBehaviour
     {
         for (int i = 0; i < round * round; i++)
         {
-            int Choice = Random.Range(0, MonsterChoices.Length - 1);
+            //int Choice = Random.Range(0, MonsterChoices.Length - 1);
             //TODO: Set position to something that makes more sense for the final game
             Vector2 Position = new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
-            Instantiate(MonsterChoices[Choice], Position, Quaternion.identity).GetComponent<Monster>().Init(player);
+            Instantiate(MonsterChoices[0], Position, Quaternion.identity).GetComponent<Monster>().Init(player);
         }
         round++;
     }

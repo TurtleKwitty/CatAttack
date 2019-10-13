@@ -20,6 +20,14 @@ public class MapManager : MonoBehaviour
 
     private int frame = 0;
 
+    public void Kill()
+    {
+        mapManager = null;
+        GridObject = null;
+        Ground = null;
+        Obstacles = null;
+    }
+
     public static MapManager Instance
     {
         get
@@ -96,7 +104,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        GameManager.Instance.StartGame();
+        GameManager.Instance.ReadyGame();
     }
 
     public void Update()
@@ -104,7 +112,7 @@ public class MapManager : MonoBehaviour
         if (frame == 10)
         {
             AstarPath.active.Scan();
-            GameManager.Instance.StartGame();
+            GameManager.Instance.ReadyGame();
             frame++;
         } else { frame++; }
     }

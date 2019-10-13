@@ -18,6 +18,11 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.RegisterPlayer(gameObject);
     }
 
+    private void OnDestroy()
+    {
+        GameManager.Instance.UnRegisterPlayer(gameObject);
+    }
+
     private void Start()
     {
         player = gameObject;
