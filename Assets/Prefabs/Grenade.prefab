@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2636831186294623677}
   - component: {fileID: 2636831186294623649}
   - component: {fileID: 2636831186294623650}
-  - component: {fileID: 2636831186294623648}
-  - component: {fileID: 5803152938539521220}
+  - component: {fileID: 417416937189031792}
+  - component: {fileID: 4716130264896634174}
   m_Layer: 0
   m_Name: Grenade
   m_TagString: Untagged
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dda492385f9dfa4d8549f6aec318361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
   explosion: {fileID: 1793540397470691758, guid: c830406fcc9d18344931bef647719c6c,
     type: 3}
 --- !u!50 &2636831186294623650
@@ -140,7 +141,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &2636831186294623648
+--- !u!58 &417416937189031792
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,7 +157,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.65
---- !u!61 &5803152938539521220
+--- !u!61 &4716130264896634174
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,10 +167,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011728421, y: 0.003909588}
+  m_Offset: {x: -0.005838454, y: -0.011676788}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -180,5 +181,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.43156996, y: 0.30164623}
+  m_Size: {x: 0.39602387, y: 0.34012318}
   m_EdgeRadius: 0
