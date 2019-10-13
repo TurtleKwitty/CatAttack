@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: ResourceWood
+  m_Name: ResourceBrush
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 0}
@@ -36,6 +36,8 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Prefabs:
-  - {fileID: 98545910281798750, guid: e512458461c888943b7abd25cef34152, type: 3}
+  - {fileID: 816127174697850380, guid: 72807bf96b62e3e489e9f7dc3b761d7d, type: 3}
+  - {fileID: 5551465630707881472, guid: f50b989dd9ee9934dab380ef9bdd3cd5, type: 3}
+  - {fileID: 8512904530156660896, guid: 1bf09af6f5fdff846a54a1d0243492de, type: 3}
   m_PerlinScale: 0.5
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
