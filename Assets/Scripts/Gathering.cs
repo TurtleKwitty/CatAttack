@@ -10,12 +10,13 @@ public class Gathering : MonoBehaviour
     private bool isEmpty = false;
     private GameObject player1;
     private GameObject player2;
-    private IEnumerator coroutine;
     private SpriteRenderer spriteRend;
     private BoxCollider2D bc;
     private PlayerResources player1ResourcesScript;
     private PlayerResources player2ResourcesScript;
+    public float alphaFade = .05f;
     [SerializeField] private float offset;
+    [SerializeField] private float timeBeforeFade;
     [SerializeField] private float timeForGather;
     [SerializeField] private List<Sprite> sprites;
     [SerializeField] private string id;
@@ -44,6 +45,18 @@ public class Gathering : MonoBehaviour
         }
     }
 
+    IEnumerator Fade()
+    {
+        yield return new WaitForSeconds(timeBeforeFade);
+        while(spriteRend.color.a >= 0f)
+        {
+            Color tmp = spriteRend.color;
+            tmp.a -= alphaFade;
+            spriteRend.color = tmp;
+            yield return new WaitForSeconds(alphaFade);
+        }
+        Destroy(gameObject);
+    }
     private void ChangeSprite()
     {
         if(resourceAmount == MaxResourceAmount / 2 - MaxResourceAmount % 2)
@@ -60,6 +73,8 @@ public class Gathering : MonoBehaviour
             {
                 spriteRend.color = new Color(.6f, .6f, .6f, 1f);
             }
+
+            StartCoroutine(Fade());
         }
     }
     private void Update()
