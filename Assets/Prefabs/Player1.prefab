@@ -38,6 +38,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4937859959160114149}
   - component: {fileID: 5695500495929360387}
   - component: {fileID: 5695500495929360388}
@@ -46,6 +47,16 @@ GameObject:
   - component: {fileID: 5695500495929360391}
   - component: {fileID: 5695500495929360632}
   - component: {fileID: 5695500495929360633}
+=======
+  - component: {fileID: 1748216643810573243}
+  - component: {fileID: 1748216643810573240}
+  - component: {fileID: 1748216643810573242}
+  - component: {fileID: 1748216643810573245}
+  - component: {fileID: 1748216643810573244}
+  - component: {fileID: 1748216643810573246}
+  - component: {fileID: 1459418363557316658}
+  - component: {fileID: 4022108102251468964}
+>>>>>>> 7cb601dede3064ea16b318e92863233db9da8c1b
   m_Layer: 10
   m_Name: Player1
   m_TagString: Untagged
@@ -176,6 +187,7 @@ MonoBehaviour:
   elementsToDisplay:
   - {fileID: 3083967397564030294, guid: 0b5e753dac795514ab69cf3b42924ccd, type: 3}
   - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
+<<<<<<< HEAD
   rb: {fileID: 5695500495929360389}
   offsetValue: 1
   radialMenu: {fileID: 0}
@@ -208,6 +220,11 @@ BoxCollider2D:
   m_Size: {x: 0.65, y: 0.61012423}
   m_EdgeRadius: 0
 --- !u!114 &5695500495929360632
+=======
+  rb: {fileID: 1748216643810573245}
+  offsetValue: 0
+--- !u!114 &1748216643810573246
+>>>>>>> 7cb601dede3064ea16b318e92863233db9da8c1b
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,12 +254,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 10
   CurrentHealth: 0
+<<<<<<< HEAD
 --- !u!1 &6377951015096133280
 GameObject:
+=======
+--- !u!58 &4022108102251468964
+CircleCollider2D:
+>>>>>>> 7cb601dede3064ea16b318e92863233db9da8c1b
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1358045192252884978}
@@ -335,3 +358,15 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+=======
+  m_GameObject: {fileID: 1748216643810573241}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.18}
+  serializedVersion: 2
+  m_Radius: 0.31
+>>>>>>> 7cb601dede3064ea16b318e92863233db9da8c1b

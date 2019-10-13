@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(MapManager))]
 public class GameManager: MonoBehaviour
 {
     private static GameManager gameManager;
 
     public List<GameObject> Players = new List<GameObject>();
+
+    private bool Enabled = false;
 
     public static GameManager Instance
     {
@@ -16,13 +19,27 @@ public class GameManager: MonoBehaviour
                 var Instance = FindObjectOfType<GameManager>();
                 if (Instance == null)
                 {
-                    var ManagerObject = new GameObject();
-                    ManagerObject.name = "GameManager";
+                    var ManagerObject = GameObject.FindGameObjectWithTag("GameController");
+                    if (ManagerObject == null)
+                    {
+                        ManagerObject = new GameObject();
+                    }
                     gameManager = ManagerObject.AddComponent<GameManager>();
-                    DontDestroyOnLoad(ManagerObject);
                 }
             }
             return gameManager;
+        }
+    }
+
+    public void OnEnable()
+    {
+        if (Enabled == false)
+        {
+            if (gameManager == null) gameManager = this;
+            gameObject.name = "GameManager";
+            gameObject.tag = "GameController";
+            DontDestroyOnLoad(gameObject);
+            Enabled = true;
         }
     }
 
