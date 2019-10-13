@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 1025230861}
   - component: {fileID: 1025230863}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: testWall
   m_TagString: Ennemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
