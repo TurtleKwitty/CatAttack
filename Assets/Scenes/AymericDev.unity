@@ -258,8 +258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1CanGather: 0
+  alphaFade: 0.01
   offset: 0.4
+  timeBeforeFade: 1.5
   timeForGather: 0.3
   sprites:
   - {fileID: -2705597995764985619, guid: 38c4fa9b4d60db7418b66f887f769b04, type: 3}
@@ -538,8 +539,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1CanGather: 0
+  alphaFade: 0.01
   offset: 0
+  timeBeforeFade: 1.5
   timeForGather: 0.3
   sprites:
   - {fileID: -528837131520387009, guid: 4c6fb3b925f7422499682fba5a109de3, type: 3}
@@ -686,8 +688,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 363cda0cfeb0b2945bcbfbb21845e553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1CanGather: 0
+  alphaFade: 0.01
   offset: 0.8
+  timeBeforeFade: 1.5
   timeForGather: 0.3
   sprites:
   - {fileID: 3818217323743452925, guid: 539d02f0f29290d4781295f2e78bd2ba, type: 3}
