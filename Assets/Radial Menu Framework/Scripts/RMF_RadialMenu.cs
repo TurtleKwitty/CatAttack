@@ -101,7 +101,6 @@ public class RMF_RadialMenu : MonoBehaviour {
         }
 
         radialMenuScript = transform.parent.parent.GetComponent<RadialMenu>();
-        Debug.Log(transform.parent.parent);
     }
 
     public void MoveRadialMenu()

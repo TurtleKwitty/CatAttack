@@ -28,7 +28,6 @@ public class RadialMenu : MonoBehaviour
     public void Build()
     {
         positionToBuild = transform.position + transform.TransformDirection(offset);
-        Debug.Log(gameObject);
         if (selectedElement != null)
             Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
         else

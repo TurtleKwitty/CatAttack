@@ -143,7 +143,6 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        Debug.Log(PlayersNumber.NumberOfPlayers);
         SceneManager.LoadScene("AymericDev", LoadSceneMode.Single);
     }
 
