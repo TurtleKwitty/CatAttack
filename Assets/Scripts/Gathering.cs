@@ -22,6 +22,7 @@ public class Gathering : MonoBehaviour
     [SerializeField] private string id;
     [SerializeField] private int resourceAmount;
     [SerializeField] private int MaxResourceAmount;
+    [SerializeField] private string soundToPlay;
     void Start()
     {
         bc = GetComponent<BoxCollider2D>();
@@ -88,6 +89,7 @@ public class Gathering : MonoBehaviour
             }
 
             resourceAmount--;
+            AudioManager.PlaySound(soundToPlay);
             player1ResourcesScript.AddResource(1, id);
 
             StartCoroutine(GatheringTime(0));
@@ -101,6 +103,7 @@ public class Gathering : MonoBehaviour
             }
 
             resourceAmount--;
+            AudioManager.PlaySound(soundToPlay);
             player2ResourcesScript.AddResource(1, id);
 
             StartCoroutine(GatheringTime(1));

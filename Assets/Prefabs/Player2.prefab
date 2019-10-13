@@ -227,8 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToDisplay:
-  - {fileID: 3083967397564030294, guid: 0b5e753dac795514ab69cf3b42924ccd, type: 3}
-  - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
+  - {fileID: 2677954792611831290, guid: 86bec8befedeb8b4c929abf9ee7704f6, type: 3}
+  - {fileID: 432808711057613584, guid: b6a21e5e157157e45a6a69106ee338b9, type: 3}
+  - {fileID: 9176223357847220810, guid: 07fea4354056a3944a07aa471f2f28b7, type: 3}
   BuildBrush: []
   rb: {fileID: 1748216643810573245}
   offsetValue: 1

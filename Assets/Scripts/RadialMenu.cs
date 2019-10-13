@@ -59,7 +59,7 @@ public class RadialMenu : MonoBehaviour
                 selectedElement = BuildBrush[idx_];
                 break;
             case 2:
-                Debug.Log("Select third element");
+                selectedElement = BuildBrush[idx_];
                 break;
             case 3:
                 Debug.Log("Select fourth element");

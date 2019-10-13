@@ -149,3 +149,4 @@ MonoBehaviour:
   id: ore
   resourceAmount: 20
   MaxResourceAmount: 20
+  soundToPlay: metalHit
