@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 872353909784407778}
   - component: {fileID: 1755238401279938922}
   - component: {fileID: 652774336780888591}
+  - component: {fileID: -2447907037507823989}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Player
@@ -248,6 +249,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da3388e2ace4b054e9507303a4ad5cf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wood: 0
+  iron: 0
+  stone: 0
+--- !u!114 &-2447907037507823989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7095976680119657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3b0cc5918402404ea05a6f78ccc293f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 7095976197046887}
+  grenadePrefab: {fileID: 2636831186294623678, guid: 0d355cedcff4a1f41befd282d269e3e1,
+    type: 3}
 --- !u!1 &8228170020050857349
 GameObject:
   m_ObjectHideFlags: 0
