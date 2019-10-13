@@ -16,15 +16,6 @@ public class Grenade : MonoBehaviour
         Invoke("Boom", 1.5f);
     }
 
-    //IEnumerator Explosion()
-    //{
-    //    yield return new WaitForSeconds(timeBeforeExplosion);
-    //    GetComponent<CircleCollider2D>().enabled = true;
-    //    GameObject effect = Instantiate(explosion, transform.position, Quaternion.identity);
-    //    Destroy(gameObject);
-    //    Destroy(effect, 1.1f);
-    //}
-
     private void Boom()
     {
         if (alreadyBoomed == false)

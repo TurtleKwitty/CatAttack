@@ -14,7 +14,6 @@ public class RMF_RadialMenu : MonoBehaviour {
     //public RectTransform baseCircleRT;
     //public Image selectionFollowerImage;
 
-    [SerializeField] PlayerController playerControllerScript;
 
     [Tooltip("Adjusts the radial menu for use with a gamepad or joystick. You might need to edit this script if you're not using the default horizontal and vertical input axes.")]
     public bool useGamepad = false;
