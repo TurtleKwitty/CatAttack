@@ -28,9 +28,9 @@ public class RadialMenu : MonoBehaviour
     // fonction appelée quand le joueur presse sur A
     public void Build()
     {
-        positionToBuild = transform.position + transform.TransformDirection(offset);
+        positionToBuild = transform.position;
         if (selectedElement != null)
-            Instantiate(selectedElement, positionToBuild, Quaternion.Euler(0, 0, rb.rotation));
+            MapManager.Instance.Build(selectedElement, (int)positionToBuild.x, (int)positionToBuild.y);
         else
             Debug.Log("selected element = null");
     }
@@ -45,7 +45,6 @@ public class RadialMenu : MonoBehaviour
         {
             case 0:
                 selectedElement = BuildBrush[idx_];
-                Debug.Log(gameObject);
                 break;
             case 1:
                 selectedElement = BuildBrush[idx_];

@@ -14,13 +14,13 @@ public class BulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject);
-        GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        Destroy(effect, .3f);
-        GameObject col = collision.gameObject;
 
-        if (col.layer == 11)
+        if (collision.gameObject.layer == 11)
         {
+            Destroy(gameObject);
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, .3f);
+            GameObject col = collision.gameObject;
             col.GetComponent<HealthManager>().Attack(AttackDamage);
         }
     }

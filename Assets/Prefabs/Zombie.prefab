@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 4716180358850219748}
   - component: {fileID: 2666185407677418988}
   - component: {fileID: 4860475727276863573}
-  - component: {fileID: 2882258619823929051}
   - component: {fileID: 1325400761397315980}
-  - component: {fileID: 8056830942340375829}
-  - component: {fileID: 6444945138331961491}
-  - component: {fileID: 7879684747465546379}
+  - component: {fileID: 6951496652714382039}
+  - component: {fileID: 4744492921822548728}
+  - component: {fileID: 4554298201783307958}
+  - component: {fileID: 7391710594358791152}
   m_Layer: 11
   m_Name: Zombie
   m_TagString: Untagged
@@ -115,23 +115,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.12}
+  m_Offset: {x: -0.03, y: 0}
   serializedVersion: 2
-  m_Radius: 0.27
---- !u!114 &2882258619823929051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4716180358850219749}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 0}
+  m_Radius: 0.31
 --- !u!114 &1325400761397315980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,7 +132,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttackRange: 0.5
   AttackDamage: 1
---- !u!114 &8056830942340375829
+  AttacksPerSecond: 1
+  speed: 5
+  NextWayPointDistance: 3
+--- !u!114 &6951496652714382039
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,14 +163,28 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: -1
---- !u!114 &6444945138331961491
+--- !u!114 &4744492921822548728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4716180358850219749}
-  m_Enabled: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
+--- !u!114 &4554298201783307958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4716180358850219749}
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
   m_Name: 
@@ -192,14 +195,14 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 10
+  maxSpeed: 1
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
   centerOffsetCompatibility: NaN
   orientation: 1
-  enableRotation: 0
+  enableRotation: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
@@ -210,7 +213,7 @@ MonoBehaviour:
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
---- !u!50 &7879684747465546379
+--- !u!50 &7391710594358791152
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -225,7 +228,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

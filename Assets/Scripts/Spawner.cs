@@ -39,7 +39,6 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < round * round; i++)
         {
             int Choice = Random.Range(0, MonsterChoices.Length - 1);
-            Debug.Log(MonsterChoices[Choice]);
             //TODO: Set position to something that makes more sense for the final game
             Vector2 Position = new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
             Instantiate(MonsterChoices[Choice], Position, Quaternion.identity).GetComponent<Monster>().Init(player);
