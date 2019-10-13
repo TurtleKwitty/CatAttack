@@ -117,6 +117,12 @@ public class MapManager : MonoBehaviour
         if (!AstarPath.active.graphs[0].GetNearest(pos).node.Walkable) return false;
 
         Brush.Paint(GridObject.GetComponent<Grid>(), Obstacles.gameObject, pos);
+        //AstarPath.active.graphs[0].GetNearest(new Vector3(x, y)).node.Walkable = false;
         return true;
+    }
+
+    public void Clear(int x, int y)
+    {
+        AstarPath.active.graphs[0].GetNearest(new Vector3(x, y)).node.Walkable = true;
     }
 }
