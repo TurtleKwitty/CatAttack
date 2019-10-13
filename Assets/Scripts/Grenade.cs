@@ -26,11 +26,15 @@ public class Grenade : MonoBehaviour
 
     private void Boom()
     {
-        GetComponent<CircleCollider2D>().enabled = true;
-        GameObject effect = Instantiate(explosion, transform.position, Quaternion.identity);
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        Destroy(gameObject,.4f);
-        Destroy(effect, 1.1f);
+        if (alreadyBoomed == false)
+        {
+            GetComponent<CircleCollider2D>().enabled = true;
+            GameObject effect = Instantiate(explosion, transform.position, Quaternion.identity);
+            GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+            Destroy(gameObject, .4f);
+            Destroy(effect, 1.1f);
+            alreadyBoomed = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,6 +43,18 @@ public class Grenade : MonoBehaviour
         {
             Debug.Log("Ennemi hit !");
             Boom();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ennemi")
+        {
+            Boom();
+        }
+        else
+        {
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision.collider);
         }
     }
 }
