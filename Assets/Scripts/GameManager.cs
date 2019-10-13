@@ -62,7 +62,7 @@ public class GameManager: MonoBehaviour
         {
             Destroy(spawner);
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
         Instantiate(SpawnerPrefab, transform);
+        LoadManager.Ready = true;
     }
 }
