@@ -6,10 +6,17 @@ using UnityEngine;
 public class GameManager: MonoBehaviour
 {
     private static GameManager gameManager;
+    private static Spawner spawner;
+
+    public Spawner SpawnerPrefab;
 
     public List<GameObject> Players = new List<GameObject>();
 
+    public float RoundTime = 60;
+
     private bool Enabled = false;
+
+    private int frame = 0;
 
     public static GameManager Instance
     {
@@ -24,8 +31,9 @@ public class GameManager: MonoBehaviour
                     {
                         ManagerObject = new GameObject();
                     }
-                    gameManager = ManagerObject.AddComponent<GameManager>();
+                    Instance = ManagerObject.AddComponent<GameManager>();
                 }
+                gameManager = Instance;
             }
             return gameManager;
         }
@@ -46,5 +54,15 @@ public class GameManager: MonoBehaviour
     public void RegisterPlayer(GameObject player)
     {
         Players.Add(player);
+    }
+
+    public void StartGame()
+    {
+        if(spawner != null)
+        {
+            Destroy(spawner);
+        }
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
+        Instantiate(SpawnerPrefab, transform);
     }
 }

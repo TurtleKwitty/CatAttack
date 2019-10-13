@@ -191,7 +191,7 @@ MonoBehaviour:
   height: 0.01
   repathRate: 0.5
   canSearch: 1
-  canMove: 0
+  canMove: 1
   maxSpeed: 10
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:

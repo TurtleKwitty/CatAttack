@@ -20,8 +20,27 @@ public class MainMenu : MonoBehaviour
     private bool chosingPlayers = true;
     public int numberPlayers = 0;
 
+    private bool SceneIsReady = false;
+    private bool ChangeScene = false;
+    private IEnumerator LoadScene()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("HowToPlay", LoadSceneMode.Additive);
+        asyncLoad.allowSceneActivation = false;
+        //Wait until the last operation fully loads to return anything
+        while (asyncLoad.progress < 0.9f)
+        {
+            Debug.Log(asyncLoad.progress);
+            yield return null;
+        }
+        SceneIsReady = true;
+        Debug.Log("Scene is ready!");
+    }
+
     private void Start()
     {
+        //StartCoroutine(LoadScene());
+        SceneIsReady = true;
+
         index = 4;
         selectedButton = onePlayer;
         EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
@@ -29,6 +48,7 @@ public class MainMenu : MonoBehaviour
 
     private void Update()
     {
+        if (ChangeScene && SceneIsReady) SceneManager.LoadScene("HowToPlay");
         if (chosingPlayers)
         {
             if (canChange == false && Input.GetAxisRaw("HorizontalPlayer1") == 0)
@@ -107,7 +127,7 @@ public class MainMenu : MonoBehaviour
     {
         for(int i = 0; i < buttons.Count; i++)
         {
-            if(i < 4)
+            if(i < 2)
             {
                 buttons[i].gameObject.SetActive(true);
             }
@@ -126,7 +146,7 @@ public class MainMenu : MonoBehaviour
     {
         for (int i = 0; i < buttons.Count; i++)
         {
-            if (i < 4)
+            if (i < 2)
             {
                 buttons[i].gameObject.SetActive(true);
             }
@@ -141,10 +161,30 @@ public class MainMenu : MonoBehaviour
         PlayersNumber.NumberOfPlayers = 1;
     }
 
+    public void Back()
+    {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            if (i < 2)
+            {
+                buttons[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                buttons[i].gameObject.SetActive(true);
+            }
+        }
+        PlayersNumber.NumberOfPlayers = 0;
+
+        index = 3;
+        selectedButton = buttons[index];
+        EventSystem.current.SetSelectedGameObject(selectedButton.gameObject);
+    }
+
     public void Play()
     {
         Debug.Log(PlayersNumber.NumberOfPlayers);
-        SceneManager.LoadScene("AymericDev", LoadSceneMode.Single);
+        ChangeScene = true;
     }
 
     public void HowToPlay()
