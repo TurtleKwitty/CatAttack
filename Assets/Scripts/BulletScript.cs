@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     [SerializeField] private GameObject hitEffect;
+    public float AttackDamage;
 
     private void Start()
     {
@@ -17,9 +18,9 @@ public class BulletScript : MonoBehaviour
         Destroy(effect, .4f);
         GameObject col = collision.gameObject;
 
-        if (col.tag == "Ennemi")
+        if (col.layer == 11)
         {
-            // DO SOME SHIT WHEN BULLET TOUCH ENNEMI
+            col.GetComponent<HealthManager>().Attack(AttackDamage);
         }
     }
 }
