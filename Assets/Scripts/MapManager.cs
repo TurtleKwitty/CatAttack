@@ -48,6 +48,7 @@ public class MapManager : MonoBehaviour
             GridObject.name = "Grid";
             GridObject.transform.parent = gameObject.transform;
             GridObject.AddComponent<Grid>();
+            GridObject.transform.position = Vector3.zero;
 
             //Setup the Obstacle layer
             var ObstaclesObject = new GameObject();

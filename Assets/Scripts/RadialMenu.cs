@@ -22,15 +22,24 @@ public class RadialMenu : MonoBehaviour
     {
         selectedElement = null;
         cam = Camera.main;
-        offset = new Vector3(0, offsetValue, 0);
     }
 
     // fonction appelée quand le joueur presse sur A
-    public void Build()
+    public void Build(int PlayerID)
     {
-        positionToBuild = transform.position;
+        positionToBuild = GameManager.Instance.Players[PlayerID].transform.GetChild(0).position;
+
+        var Diff = positionToBuild - transform.position;
+        if (Diff.x > 0.5) Diff.x = 1;
+        else if (Diff.x < -0.5) Diff.x = -1;
+        else Diff.x = 0;
+        if (Diff.y > 0.5) Diff.y = 1;
+        else if (Diff.y < -0.5) Diff.y = -1;
+        else Diff.y = 0;
+
+        Vector3Int pos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0);
         if (selectedElement != null)
-            MapManager.Instance.Build(selectedElement, (int)positionToBuild.x, (int)positionToBuild.y);
+            MapManager.Instance.Build(selectedElement, (int)(pos.x + Diff.x) , (int)(pos.y + Diff.y));
         else
             Debug.Log("selected element = null");
     }
