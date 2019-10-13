@@ -13,7 +13,7 @@ public class SpawnPlayers : MonoBehaviour
     {
         position = Vector3.zero;
         position.x = -5f;
-        numberOfPlayers = PlayersNumber.NumberOfPlayers;
+        numberOfPlayers = PlayersNumber.NumberOfPlayers+1;
 
         for(int i = 0; i <= numberOfPlayers; i++)
         {

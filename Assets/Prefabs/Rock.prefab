@@ -149,3 +149,4 @@ MonoBehaviour:
   id: rock
   resourceAmount: 10
   MaxResourceAmount: 10
+  soundToPlay: miningRock

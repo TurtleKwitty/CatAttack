@@ -22,6 +22,7 @@ public class Gathering : MonoBehaviour
     [SerializeField] private string id;
     [SerializeField] private int resourceAmount;
     [SerializeField] private int MaxResourceAmount;
+    [SerializeField] private string soundToPlay;
     void Start()
     {
         bc = GetComponent<BoxCollider2D>();

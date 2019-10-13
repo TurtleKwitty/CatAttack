@@ -34,6 +34,14 @@ public class Shoot : MonoBehaviour
     private void Shooting()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        float random = Random.Range(1, 10);
+        Debug.Log(random);
+
+        if (random <= 5f)
+            AudioManager.PlaySound("laserShot1");
+        else
+            AudioManager.PlaySound("laserShot2");
+
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * bulletSpeed, ForceMode2D.Impulse);
     }

@@ -7,7 +7,7 @@ public class Grenade : MonoBehaviour
     private float timeBeforeExplosion = 1.5f;
     private float speed = 5f;
     private bool alreadyBoomed = false;
-    [SerializeField] private Collider2D col;
+    public float damages;
     [SerializeField] GameObject explosion;
     // Start is called before the first frame update
     void Start()
@@ -20,10 +20,10 @@ public class Grenade : MonoBehaviour
     {
         if (alreadyBoomed == false)
         {
-            Debug.Log("booming !");
             Destroy(GetComponent<BoxCollider2D>());
             GetComponent<CircleCollider2D>().enabled = true;
             GameObject effect = Instantiate(explosion, transform.position, Quaternion.identity);
+            AudioManager.PlaySound("bigExplosion");
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
 
             Destroy(gameObject, .4f);
@@ -43,7 +43,7 @@ public class Grenade : MonoBehaviour
             }
             else
             {
-                Debug.Log("Damaging");
+                collision.GetComponent<HealthManager>().Attack(damages);
                 //INFLICT DAMAGES HERE
             }
 
