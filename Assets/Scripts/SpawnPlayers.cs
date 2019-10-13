@@ -9,7 +9,7 @@ public class SpawnPlayers : MonoBehaviour
     private Transform canvas;
     private int numberOfPlayers;
     private Vector3 position;
-    void Start()
+    void OnEnable()
     {
         position = Vector3.zero;
         position.x = -5f;

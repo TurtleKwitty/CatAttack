@@ -226,8 +226,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementsToDisplay:
-  - {fileID: 3083967397564030294, guid: 0b5e753dac795514ab69cf3b42924ccd, type: 3}
-  - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
+  - {fileID: 432808711057613584, guid: b6a21e5e157157e45a6a69106ee338b9, type: 3}
+  - {fileID: 432808711057613584, guid: b6a21e5e157157e45a6a69106ee338b9, type: 3}
+  BuildBrush:
+  - {fileID: 11400000, guid: ce67c9c6b6b575548a383ff82adc0ea4, type: 2}
+  - {fileID: 11400000, guid: ce67c9c6b6b575548a383ff82adc0ea4, type: 2}
   rb: {fileID: 7095976680119661}
   offsetValue: 1
   radialMenu: {fileID: 0}

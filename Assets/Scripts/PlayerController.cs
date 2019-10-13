@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        //GameManager.Instance.RegisterPlayer(gameObject);
+        GameManager.Instance.RegisterPlayer(gameObject);
     }
 
     private void Start()

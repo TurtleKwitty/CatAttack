@@ -7,6 +7,7 @@ public class RadialMenu : MonoBehaviour
     // liste des éléments à display dans le menu radial
     // pour le moment c'est le premier élément de cette liste qui est build quand le joueur presse sur A
     [SerializeField] private List<GameObject> elementsToDisplay;
+    [SerializeField] private List<GridBrushBase> BuildBrush;
     [SerializeField] private Rigidbody2D rb;
     // valeur de l'offset pour la distance entre le joueur et la position de construction
     [SerializeField] private float offsetValue;
@@ -16,7 +17,7 @@ public class RadialMenu : MonoBehaviour
 
     private Vector3 positionToBuild;
     private Vector3 offset;
-    public GameObject selectedElement;
+    public GridBrushBase selectedElement;
     void Start()
     {
         selectedElement = null;
@@ -43,11 +44,11 @@ public class RadialMenu : MonoBehaviour
         switch (idx_)
         {
             case 0:
-                selectedElement = elementsToDisplay[idx_];
+                selectedElement = BuildBrush[idx_];
                 Debug.Log(gameObject);
                 break;
             case 1:
-                selectedElement = elementsToDisplay[idx_];
+                selectedElement = BuildBrush[idx_];
                 break;
             case 2:
                 Debug.Log("Select third element");

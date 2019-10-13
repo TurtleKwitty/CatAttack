@@ -18,7 +18,7 @@ public class MapManager : MonoBehaviour
     public GridBrushBase[] ResourceNodes;
     public int NumResourceSpawn = 1000;
 
-    private bool Scanned = false;
+    private int frame = 0;
 
     public static MapManager Instance
     {
@@ -87,12 +87,36 @@ public class MapManager : MonoBehaviour
         }
     }
 
+    IEnumerator StartScan()
+    {
+        for(var x = -SizeX/2; x < SizeX/2; x+=10)
+        {
+            for(var y = -SizeY/2; y < SizeY/2; y+=10)
+            {
+                AstarPath.active.UpdateGraphs(new Bounds(new Vector3(x, y), new Vector3(10, 10)));
+                yield return null;
+            }
+        }
+
+        GameManager.Instance.StartGame();
+    }
+
     public void Update()
     {
-        if (!Scanned)
+        if (frame == 10)
         {
             AstarPath.active.Scan();
-            Scanned = true;
-        }
+            GameManager.Instance.StartGame();
+            frame++;
+        } else { frame++; }
+    }
+    
+    public bool Build(GridBrushBase Brush, int x, int y)
+    {
+        var pos = new Vector3Int(x, y, 0);
+        if (!AstarPath.active.graphs[0].GetNearest(pos).node.Walkable) return false;
+
+        Brush.Paint(GridObject.GetComponent<Grid>(), Obstacles.gameObject, pos);
+        return true;
     }
 }
