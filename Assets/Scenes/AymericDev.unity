@@ -150,12 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players:
-  - {fileID: 5695500495929360634, guid: 77c33ba3eeeae8046af07b4da3bc2353, type: 3}
+  - {fileID: 7095976680119657, guid: 77c33ba3eeeae8046af07b4da3bc2353, type: 3}
   - {fileID: 1748216643810573241, guid: 56d2f3f90cfee564499292855a95a0d5, type: 3}
   radMenus:
   - {fileID: 4963354835674994361, guid: 6f74c5e0e5e52884cafd1f8729c4b080, type: 3}
   - {fileID: 8638039613159872776, guid: 89b91060c06941048ac2cb33ee6ba269, type: 3}
-  canvas: {fileID: 2098662301}
 --- !u!4 &206946053
 Transform:
   m_ObjectHideFlags: 0
