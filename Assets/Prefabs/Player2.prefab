@@ -132,7 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 1748216643810573245}
-  mainRadialScript: {fileID: 0}
+  mainRadialScript: {fileID: 8638039613159872781, guid: 89b91060c06941048ac2cb33ee6ba269,
+    type: 3}
 --- !u!50 &1748216643810573245
 Rigidbody2D:
   serializedVersion: 4
@@ -227,6 +228,8 @@ MonoBehaviour:
   - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
   rb: {fileID: 1748216643810573245}
   offsetValue: 1
-  radialMenu: {fileID: 0}
-  rectTransform: {fileID: 0}
+  radialMenu: {fileID: 8638039613159872776, guid: 89b91060c06941048ac2cb33ee6ba269,
+    type: 3}
+  rectTransform: {fileID: 8638039613159872779, guid: 89b91060c06941048ac2cb33ee6ba269,
+    type: 3}
   cam: {fileID: 0}

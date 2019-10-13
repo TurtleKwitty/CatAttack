@@ -10,16 +10,32 @@ public class RadialMenu : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     // valeur de l'offset pour la distance entre le joueur et la position de construction
     [SerializeField] private float offsetValue;
-    [SerializeField] GameObject radialMenu;
-    [SerializeField] private RectTransform rectTransform;
-    [SerializeField] private Camera cam;
+    GameObject radialMenu;
+    private RectTransform rectTransform;
+    private Camera cam;
 
     private Vector3 positionToBuild;
     private Vector3 offset;
     private GameObject selectedElement;
     void Start()
     {
+        if (gameObject.name == "Player1")
+        {
+            radialMenu = GameObject.Find("RadialMenuPlayer1");
+            rectTransform = radialMenu.GetComponent<RectTransform>();
+        }
+
+        else if (gameObject.name == "Player2")
+        {
+            radialMenu = GameObject.Find("RadialMenuPlayer2");
+            rectTransform = radialMenu.GetComponent<RectTransform>();
+        }
+
+        cam = Camera.main;
         offset = new Vector3(0, offsetValue, 0);
+
+        GameObject.Find("RadialMenuPlayer1").SetActive(false);
+        GameObject.Find("RadialMenuPlayer2").SetActive(false);
     }
 
     // fonction appelée quand le joueur presse sur A

@@ -102,7 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 5066594972694821517}
-  mainRadialScript: {fileID: 0}
+  mainRadialScript: {fileID: 4963354835674994364, guid: 6f74c5e0e5e52884cafd1f8729c4b080,
+    type: 3}
 --- !u!50 &5066594972694821517
 Rigidbody2D:
   serializedVersion: 4
@@ -141,8 +142,10 @@ MonoBehaviour:
   - {fileID: 1136077891090214995, guid: 3f6db4bf15d0073468c3d7f460908ec3, type: 3}
   rb: {fileID: 5066594972694821517}
   offsetValue: 1
-  radialMenu: {fileID: 0}
-  rectTransform: {fileID: 0}
+  radialMenu: {fileID: 4963354835674994361, guid: 6f74c5e0e5e52884cafd1f8729c4b080,
+    type: 3}
+  rectTransform: {fileID: 4963354835674994362, guid: 6f74c5e0e5e52884cafd1f8729c4b080,
+    type: 3}
   cam: {fileID: 0}
 --- !u!61 &5066594972694821519
 BoxCollider2D:
