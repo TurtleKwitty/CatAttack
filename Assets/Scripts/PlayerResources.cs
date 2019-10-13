@@ -38,6 +38,27 @@ public class PlayerResources : MonoBehaviour
         }
     }
 
+    public void RemoveResource(int amount, string id)
+    {
+        switch (id)
+        {
+            case "tree":
+                wood -= amount;
+                if (PlayerID >= 0) HUDManager.Delegates[PlayerID, 0](wood);
+                break;
+            case "rock":
+                stone -= amount;
+                if (PlayerID >= 0) HUDManager.Delegates[PlayerID, 1](stone);
+                break;
+            case "ore":
+                iron -= amount;
+                if (PlayerID >= 0) HUDManager.Delegates[PlayerID, 2](iron);
+                break;
+            default:
+                break;
+        }
+    }
+
     public int GetWood()
     {
         return wood;

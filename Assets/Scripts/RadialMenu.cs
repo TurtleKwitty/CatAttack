@@ -14,12 +14,13 @@ public class RadialMenu : MonoBehaviour
     [HideInInspector] public GameObject radialMenu;
     [HideInInspector] public RectTransform rectTransform;
     private Camera cam;
-
+    private PlayerResources playerResourcesScript;
     private Vector3 positionToBuild;
     private Vector3 offset;
     public GridBrushBase selectedElement;
     void Start()
     {
+        playerResourcesScript = GetComponent<PlayerResources>();
         selectedElement = null;
         cam = Camera.main;
     }
@@ -39,7 +40,30 @@ public class RadialMenu : MonoBehaviour
 
         Vector3Int pos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0);
         if (selectedElement != null)
-            MapManager.Instance.Build(selectedElement, (int)(pos.x + Diff.x) , (int)(pos.y + Diff.y));
+        {
+            if (selectedElement == BuildBrush[0] && playerResourcesScript.GetWood() >= 4)
+            {
+                MapManager.Instance.Build(selectedElement, (int)(pos.x + Diff.x), (int)(pos.y + Diff.y));
+                playerResourcesScript.RemoveResource(4, "tree");
+            }
+            else if (selectedElement == BuildBrush[1] && playerResourcesScript.GetWood() >= 2 && playerResourcesScript.GetStone() >= 4)
+            {
+                MapManager.Instance.Build(selectedElement, (int)(pos.x + Diff.x), (int)(pos.y + Diff.y));
+                playerResourcesScript.RemoveResource(2, "tree");
+                playerResourcesScript.RemoveResource(4, "rock");
+            }
+            else if (selectedElement == BuildBrush[2] && playerResourcesScript.GetWood() >= 2 && playerResourcesScript.GetStone() >= 3 && playerResourcesScript.GetIron() >= 6)
+            {
+                MapManager.Instance.Build(selectedElement, (int)(pos.x + Diff.x), (int)(pos.y + Diff.y));
+                playerResourcesScript.RemoveResource(2, "tree");
+                playerResourcesScript.RemoveResource(3, "rock");
+                playerResourcesScript.RemoveResource(6, "ore");
+            }
+            else
+            {
+                Debug.Log("not enough resources");
+            }
+        }
         else
             Debug.Log("selected element = null");
     }
